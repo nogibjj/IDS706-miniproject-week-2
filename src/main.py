@@ -4,7 +4,7 @@ Top level script.
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
-from lib.data_loader import *
+from lib.data_loader import master
 
 
 if __name__ == "__main__":
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     # define function to rank the percentage values
     def rankmin(x):
-        u, inv, counts = np.unique(x, return_inverse=True, return_counts=True)
+        _, inv, counts = np.unique(x, return_inverse=True, return_counts=True)
         csum = np.zeros_like(counts)
         csum[1:] = counts[:-1].cumsum()
         return csum[inv]
