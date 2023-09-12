@@ -40,3 +40,7 @@ The visualizations themselves are stored in the `outputs` directory.
 ### Literacy rates in the top and bottom 20 countries (2011)
 
 ![Literacy Rates](/outputs/Literacy%20Rates.png)
+
+# Descriptive Statistics
+
+A table with the descriptive statistics can be found [here](/outputs/descriptive_stats.csv)

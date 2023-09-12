@@ -111,3 +111,10 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     plt.savefig("outputs/Literacy Rates.png")
+
+    # ======================= generate descriptive statistics table ===============================
+    df[[col for col in df.columns if col != "year"]].describe().round(1).to_csv(
+        "outputs/descriptive_stats.csv"
+    )
+
+    print(df[[col for col in df.columns if col != "year"]].describe().round(1))
