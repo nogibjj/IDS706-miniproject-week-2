@@ -1,4 +1,4 @@
-from lib.data_loader import *
+from src.lib.data_loader import *
 
 
 def test_shape():
