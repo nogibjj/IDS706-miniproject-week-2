@@ -118,3 +118,5 @@ if __name__ == "__main__":
     )
 
     print(df[[col for col in df.columns if col != "year"]].describe().round(1))
+
+
